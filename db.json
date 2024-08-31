@@ -1,0 +1,44 @@
+{
+    "adventure": [
+        {
+            "id": 1,
+            "name": "Twisters",
+            "cast": "Glen Powell, Daisy Edgar-Jones, Anthony Ramos"
+        },
+        {
+            "id": 2,
+            "name": "Borderlands",
+            "cast": "Cate Blanchett , Kevin Hart, Jack Black"
+        },
+        {
+            "id": 3,
+            "name": "Inside Out 2",
+            "cast": "Amy Poehler, Maya Hawke, Liza Lapira"
+        },
+        {
+            "id": 4,
+            "name": "Prometheus",
+            "cast": "Noomi Rapace, Michael Fassbender, Charlize Theron"
+        }
+    ],
+    "comedy": [
+        {
+            "id": 5,
+            "name": "Stuber",
+            "cast": "Kumail Nanjiani, Dave Bautista, Iko Uwais"
+        },
+        {
+            "id": 6,
+            "name": "Blockers",
+            "cast": "Leslie Mann, John Cena, Ike Barinholtz, Kathryn Newton"
+        },
+        {
+            "id": 7,
+            "name": "Jumanji",
+            "cast": "Robin Williams, Adam Hann-Byrd, Kirsten Dunst"
+        }
+    ],
+    "horror": [
+        
+    ]
+}
