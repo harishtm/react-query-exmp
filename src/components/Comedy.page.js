@@ -12,8 +12,10 @@ export const Comedy = () => {
         } = useQuery('comedy-movies',
                     fetchComedyMovies,
                     {
-                        refetchOnMount: true, // possible values: true, false, 'always'
-                        refetchOnWindowFocus: true
+                        // refetchOnMount: true, // possible values: true, false, 'always'
+                        // refetchOnWindowFocus: true
+                        refetchInterval: 2000, //Polling
+                        refetchIntervalInBackground: true // Continue to poll data even when the browser not in focus
                     }
                 )
 
