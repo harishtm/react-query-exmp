@@ -12,7 +12,7 @@ export const Comedy = () => {
         } = useQuery('comedy-movies',
                     fetchComedyMovies,
                     {
-                        cacheTime: 5000
+                        staleTime: 6000
                     }
                 )
 
