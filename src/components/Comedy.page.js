@@ -7,7 +7,16 @@ const fetchComedyMovies = () => {
 
 export const Comedy = () => {
 
-    const { isLoading, data, isError, error} = useQuery('comedy-movies', fetchComedyMovies)
+    const { isLoading, data,
+            isError, error, isFetching
+        } = useQuery('comedy-movies',
+                    fetchComedyMovies,
+                    {
+                        cacheTime: 5000
+                    }
+                )
+
+    console.log({isLoading, isFetching})
 
     if(isLoading) {
         return <div>Loading...</div>

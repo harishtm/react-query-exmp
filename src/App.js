@@ -4,6 +4,7 @@ import { Home } from './components/Home.page'
 import { Adventure } from './components/Adventure.page';
 import { Comedy } from './components/Comedy.page';
 import { QueryClientProvider, QueryClient } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools'
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ function App() {
                     <Route path='/comedy' element={<Comedy/>}/>
                 </Routes>
             </div>
+            <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>
         </QueryClientProvider>
     );
 }
