@@ -12,7 +12,8 @@ export const Comedy = () => {
         } = useQuery('comedy-movies',
                     fetchComedyMovies,
                     {
-                        staleTime: 6000
+                        refetchOnMount: true, // possible values: true, false, 'always'
+                        refetchOnWindowFocus: true
                     }
                 )
 
