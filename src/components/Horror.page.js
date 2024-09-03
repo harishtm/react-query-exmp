@@ -1,4 +1,5 @@
 import axios from "axios"
+import { useState } from "react"
 import { useQuery } from "react-query"
 
 
@@ -8,11 +9,30 @@ const fetchHorrorMovies = () => {
 
 export const Horror = () => {
 
+    const [interval, setRefetchInterval] = useState(3000)
+
+    const onSuccess = (data) => {
+        console.log(data?.data.length, interval)
+        if(data?.data.length > 3) {
+            setRefetchInterval(false)
+        }
+    }
+
+    const onError = (error) => {
+        console.log(error)
+        setRefetchInterval(false)
+    }
+
     const { isLoading, data} = useQuery(
         'horror-movies',
-        fetchHorrorMovies
+        fetchHorrorMovies,
+        {
+            refetchInterval: interval,
+            onSuccess: onSuccess,
+            onError: onError
+        }
     )
-    console.log(data)
+    console.log(data?.data.length)
     if(isLoading) {
         return <div>Loading...</div>
     }
