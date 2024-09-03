@@ -39,6 +39,20 @@
         }
     ],
     "horror": [
-        
+        {
+            "id": 8,
+            "name": "The First Omen",
+            "cast": "Nell Tiger Free, Ralph Ineson, Charles Dance"
+        },
+        {
+            "id": 9,
+            "name": "The Strangers: Chapter 1",
+            "cast": "Madelaine Petsch, Froy Gutierrez, Rachel Shenton"
+        },
+        {
+            "id": 10,
+            "name": "The Conjuring",
+            "cast": "Vera Farmiga, Patrick Wilson, Lili Taylor"
+        }
     ]
 }
