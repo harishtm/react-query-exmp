@@ -76,5 +76,22 @@
             "name": "Apollo 13",
             "cast": "Tom Hanks, Kevin Bacon, Bill Paxton"
         }
+    ],
+    "drama": [
+        {
+            "id": 15,
+            "name": "Napoleon",
+            "cast": "Joaquin Phoenix, Vanessa Kirby, Tahar Rahim"
+        },
+        {
+            "id": 16,
+            "name": "The Revenant",
+            "cast": "Leonardo DiCaprio, Tom Hardy, Domhnall Gleeson, Will Poulter"
+        },
+        {
+            "id": 17,
+            "name": "Apollo 13",
+            "cast": "Tom Hanks, Kevin Bacon, Bill Paxton"
+        }
     ]
 }

@@ -22,6 +22,7 @@ export const Historical = () => {
         {
             onSuccess: onSuccess,
             onError: onError,
+            /* Simple data transformation */
             select: (data) => {
                 const movieNames = data?.data.map(movie => movie.name)
                 return movieNames
