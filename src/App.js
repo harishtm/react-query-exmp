@@ -8,6 +8,8 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import { Horror } from './components/Horror.page';
 import { Historical } from './components/historical.page';
 import { Drama } from './components/Drama.page';
+import { Fantasy } from './components/Fantasy.page';
+import { MovieDetail } from './components/MovieDetail.page';
 
 const queryClient = new QueryClient();
 
@@ -35,6 +37,9 @@ function App() {
                         <li>
                             <Link to='/drama'>Drama</Link>
                         </li>
+                        <li>
+                            <Link to='/fantasy'>Fantasy</Link>
+                        </li>
                     </ul>
                 </nav>
                 <Routes>
@@ -44,6 +49,8 @@ function App() {
                     <Route path='/horror' element={<Horror/>}/>
                     <Route path='/historical' element={<Historical/>}/>
                     <Route path='/drama' element={<Drama/>}/>
+                    <Route path='/fantasy' element={<Fantasy/>}/>
+                    <Route path='/fantasy/:movieId' element={<MovieDetail/>}/>
                 </Routes>
             </div>
             <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>

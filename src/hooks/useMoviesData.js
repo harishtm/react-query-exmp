@@ -7,7 +7,7 @@ const fetchMovies = ({queryKey}) => {
         which is an object that consists of the queryKey
         (and some more information if you are using an infinite query)
     */
-    const [_, url] = queryKey;
+    const [, url] = queryKey;
     return axios.get(url)
 }
 

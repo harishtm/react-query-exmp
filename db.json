@@ -80,18 +80,35 @@
     "drama": [
         {
             "id": 15,
-            "name": "Napoleon",
-            "cast": "Joaquin Phoenix, Vanessa Kirby, Tahar Rahim"
+            "name": "Civil War",
+            "cast": "Kirsten Dunst, Wagner Moura, Sonoya Mizuno"
         },
         {
             "id": 16,
-            "name": "The Revenant",
-            "cast": "Leonardo DiCaprio, Tom Hardy, Domhnall Gleeson, Will Poulter"
+            "name": "Babylon",
+            "cast": "Brad Pitt, Margot Robbie, Tobey Maguire, Olivia Wilde"
         },
         {
             "id": 17,
-            "name": "Apollo 13",
-            "cast": "Tom Hanks, Kevin Bacon, Bill Paxton"
+            "name": "Hillbilly Elegy",
+            "cast": "Amy Adams, Glenn Close, Haley Bennett"
+        }
+    ],
+    "fantasy": [
+        {
+            "id": 18,
+            "name": "The Hobbit: An Unexpected Journey",
+            "cast": "Martin Freeman, Ian McKellen, Ken Stott"
+        },
+        {
+            "id": 19,
+            "name": "The Lord of the Rings: The Fellowship of the Ring",
+            "cast": "Elijah Wood, Ian McKellen, Richard Harris, Viggo Mortensen"
+        },
+        {
+            "id": 20,
+            "name": "Damsel",
+            "cast": "Millie Bobby Brown, Ray Winstone, Angela Bassett"
         }
     ]
 }
