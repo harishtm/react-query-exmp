@@ -12,7 +12,6 @@ export const Horror = () => {
     const [interval, setRefetchInterval] = useState(3000)
 
     const onSuccess = (data) => {
-        console.log(data?.data.length, interval)
         if(data?.data.length > 3) {
             setRefetchInterval(false)
         }
@@ -32,7 +31,6 @@ export const Horror = () => {
             onError: onError
         }
     )
-    console.log(data?.data.length)
     if(isLoading) {
         return <div>Loading...</div>
     }

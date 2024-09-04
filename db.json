@@ -59,5 +59,22 @@
             "name": "Prey",
             "cast": "Amber Midthunder, Dane DiLiegro"
         }
+    ],
+    "historical": [
+        {
+            "id": 12,
+            "name": "Napoleon",
+            "cast": "Joaquin Phoenix, Vanessa Kirby, Tahar Rahim"
+        },
+        {
+            "id": 13,
+            "name": "The Revenant",
+            "cast": "Leonardo DiCaprio, Tom Hardy, Domhnall Gleeson, Will Poulter"
+        },
+        {
+            "id": 14,
+            "name": "Apollo 13",
+            "cast": "Tom Hanks, Kevin Bacon, Bill Paxton"
+        }
     ]
 }
