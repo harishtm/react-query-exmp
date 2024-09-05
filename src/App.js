@@ -11,6 +11,7 @@ import { Drama } from './components/Drama.page';
 import { Fantasy } from './components/Fantasy.page';
 import { MovieDetail } from './components/MovieDetail.page';
 import { ParallelQueries } from './components/ParallelQueries.page';
+import { DynamicParallelPage } from './components/DynamicParallel.page';
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,9 @@ function App() {
                     <Route path='/fantasy' element={<Fantasy/>}/>
                     <Route path='/fantasy/:movieId' element={<MovieDetail/>}/>
                     <Route path='/parallel-queries' element={<ParallelQueries/>}/>
+                    <Route path='/dynamic-parallel-querie'
+                            element={<DynamicParallelPage movieIds={[5, 6, 7]}/>}
+                    />
                 </Routes>
             </div>
             <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>
