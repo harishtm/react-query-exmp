@@ -110,5 +110,17 @@
             "name": "Damsel",
             "cast": "Millie Bobby Brown, Ray Winstone, Angela Bassett"
         }
+    ],
+    "users": [
+        {
+            "id": "test@gmail.com",
+            "platform": "Netflix"
+        }
+    ],
+    "platforms": [
+        {
+            "id": "Netflix",
+            "rentals": ["Napoleon", "Stuber", "Borderlands"]
+        }
     ]
 }

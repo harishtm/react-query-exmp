@@ -12,6 +12,7 @@ import { Fantasy } from './components/Fantasy.page';
 import { MovieDetail } from './components/MovieDetail.page';
 import { ParallelQueries } from './components/ParallelQueries.page';
 import { DynamicParallelPage } from './components/DynamicParallel.page';
+import { DependentQueries } from './components/DependentQueries.page';
 
 const queryClient = new QueryClient();
 
@@ -57,6 +58,7 @@ function App() {
                     <Route path='/dynamic-parallel-querie'
                             element={<DynamicParallelPage movieIds={[5, 6, 7]}/>}
                     />
+                    <Route path='/dependent-querie' element={<DependentQueries />}/>
                 </Routes>
             </div>
             <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>
