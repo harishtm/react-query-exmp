@@ -10,6 +10,7 @@ import { Historical } from './components/historical.page';
 import { Drama } from './components/Drama.page';
 import { Fantasy } from './components/Fantasy.page';
 import { MovieDetail } from './components/MovieDetail.page';
+import { ParallelQueries } from './components/ParallelQueries.page';
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ function App() {
                     <Route path='/drama' element={<Drama/>}/>
                     <Route path='/fantasy' element={<Fantasy/>}/>
                     <Route path='/fantasy/:movieId' element={<MovieDetail/>}/>
+                    <Route path='/parallel-queries' element={<ParallelQueries/>}/>
                 </Routes>
             </div>
             <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>
