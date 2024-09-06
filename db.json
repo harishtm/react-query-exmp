@@ -122,5 +122,47 @@
             "id": "Netflix",
             "rentals": ["Napoleon", "Stuber", "Borderlands"]
         }
+    ],
+    "colors": [
+        {
+            "id": 1,
+            "label": "Red"
+        },
+        {
+            "id": 2,
+            "label": "Blue"
+        },
+        {
+            "id": 3,
+            "label": "Green"
+        },
+        {
+            "id": 4,
+            "label": "Orange"
+        },
+        {
+            "id": 5,
+            "label": "Yellow"
+        },
+        {
+            "id": 6,
+            "label": "Violet"
+        },
+        {
+            "id": 7,
+            "label": "White"
+        },
+        {
+            "id": 8,
+            "label": "Purple"
+        },
+        {
+            "id": 9,
+            "label": "Black"
+        },
+        {
+            "id": 10,
+            "label": "Pink"
+        }
     ]
 }

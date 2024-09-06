@@ -13,6 +13,8 @@ import { MovieDetail } from './components/MovieDetail.page';
 import { ParallelQueries } from './components/ParallelQueries.page';
 import { DynamicParallelPage } from './components/DynamicParallel.page';
 import { DependentQueries } from './components/DependentQueries.page';
+import { PaginatedQueries } from './components/PaginatedQueries.page';
+import { NoMatch } from './components/NoMatch.page';
 
 const queryClient = new QueryClient();
 
@@ -59,6 +61,8 @@ function App() {
                             element={<DynamicParallelPage movieIds={[5, 6, 7]}/>}
                     />
                     <Route path='/dependent-querie' element={<DependentQueries />}/>
+                    <Route path='/paginated-queries' element={<PaginatedQueries />}/>
+                    <Route path='*' element={<NoMatch/>}/>
                 </Routes>
             </div>
             <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>
