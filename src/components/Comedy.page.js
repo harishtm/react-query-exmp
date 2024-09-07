@@ -11,7 +11,7 @@ export const Comedy = () => {
         console.log("Perform side effects after data fetching", data)
     }
 
-    const onError = (data) => {
+    const onError = (error) => {
         console.log("Perform side effects encountering an error", error)
     }
 
