@@ -16,6 +16,7 @@ import { DependentQueries } from './components/DependentQueries.page';
 import { PaginatedQueries } from './components/PaginatedQueries.page';
 import { NoMatch } from './components/NoMatch.page';
 import { InfiniteQueries } from './components/InfiniteQueries.page';
+import { AddComedyMovie } from './components/AddComedyMovie.page';
 
 const queryClient = new QueryClient();
 
@@ -64,6 +65,7 @@ function App() {
                     <Route path='/dependent-querie' element={<DependentQueries />}/>
                     <Route path='/paginated-queries' element={<PaginatedQueries />}/>
                     <Route path='/infinite-queries' element={<InfiniteQueries />}/>
+                    <Route path='/add-comedy-movie' element={<AddComedyMovie />}/>
                     <Route path='*' element={<NoMatch/>}/>
                 </Routes>
             </div>

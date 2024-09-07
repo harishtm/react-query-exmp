@@ -1,4 +1,4 @@
-import { useQuery } from "react-query";
+import { useMutation, useQuery } from "react-query";
 import axios from "axios";
 
 const fetchMovies = ({queryKey}) => {
@@ -11,6 +11,10 @@ const fetchMovies = ({queryKey}) => {
     return axios.get(url)
 }
 
+const addMovie = ({url, postParam}) => {
+    return axios.post(url, postParam)
+}
+
 export const useMoviesData = (props) => {
     const { queryKey, url, onSuccess, onError} = props;
     return useQuery(
@@ -21,4 +25,8 @@ export const useMoviesData = (props) => {
             onError
         }
     )
+}
+
+export const useAddMovie = () => {
+    return useMutation(addMovie)
 }
