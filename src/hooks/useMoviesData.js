@@ -1,4 +1,4 @@
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 import axios from "axios";
 
 const fetchMovies = ({queryKey}) => {
@@ -28,5 +28,10 @@ export const useMoviesData = (props) => {
 }
 
 export const useAddMovie = () => {
-    return useMutation(addMovie)
+    const queryClient = useQueryClient()
+    return useMutation(addMovie, {
+        onSuccess: async () => {
+            await queryClient.invalidateQueries('comedy-movies')
+        }
+    })
 }

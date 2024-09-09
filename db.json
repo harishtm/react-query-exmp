@@ -1,168 +1,177 @@
 {
-    "adventure": [
-        {
-            "id": 1,
-            "name": "Twisters",
-            "cast": "Glen Powell, Daisy Edgar-Jones, Anthony Ramos"
-        },
-        {
-            "id": 2,
-            "name": "Borderlands",
-            "cast": "Cate Blanchett , Kevin Hart, Jack Black"
-        },
-        {
-            "id": 3,
-            "name": "Inside Out 2",
-            "cast": "Amy Poehler, Maya Hawke, Liza Lapira"
-        },
-        {
-            "id": 4,
-            "name": "Prometheus",
-            "cast": "Noomi Rapace, Michael Fassbender, Charlize Theron"
-        }
-    ],
-    "comedy": [
-        {
-            "id": 5,
-            "name": "Stuber",
-            "cast": "Kumail Nanjiani, Dave Bautista, Iko Uwais"
-        },
-        {
-            "id": 6,
-            "name": "Blockers",
-            "cast": "Leslie Mann, John Cena, Ike Barinholtz, Kathryn Newton"
-        },
-        {
-            "id": 7,
-            "name": "Jumanji",
-            "cast": "Robin Williams, Adam Hann-Byrd, Kirsten Dunst"
-        }
-    ],
-    "horror": [
-        {
-            "id": 8,
-            "name": "The First Omen",
-            "cast": "Nell Tiger Free, Ralph Ineson, Charles Dance"
-        },
-        {
-            "id": 9,
-            "name": "The Strangers: Chapter 1",
-            "cast": "Madelaine Petsch, Froy Gutierrez, Rachel Shenton"
-        },
-        {
-            "id": 10,
-            "name": "The Conjuring",
-            "cast": "Vera Farmiga, Patrick Wilson, Lili Taylor"
-        },
-        {
-            "id": 11,
-            "name": "Prey",
-            "cast": "Amber Midthunder, Dane DiLiegro"
-        }
-    ],
-    "historical": [
-        {
-            "id": 12,
-            "name": "Napoleon",
-            "cast": "Joaquin Phoenix, Vanessa Kirby, Tahar Rahim"
-        },
-        {
-            "id": 13,
-            "name": "The Revenant",
-            "cast": "Leonardo DiCaprio, Tom Hardy, Domhnall Gleeson, Will Poulter"
-        },
-        {
-            "id": 14,
-            "name": "Apollo 13",
-            "cast": "Tom Hanks, Kevin Bacon, Bill Paxton"
-        }
-    ],
-    "drama": [
-        {
-            "id": 15,
-            "name": "Civil War",
-            "cast": "Kirsten Dunst, Wagner Moura, Sonoya Mizuno"
-        },
-        {
-            "id": 16,
-            "name": "Babylon",
-            "cast": "Brad Pitt, Margot Robbie, Tobey Maguire, Olivia Wilde"
-        },
-        {
-            "id": 17,
-            "name": "Hillbilly Elegy",
-            "cast": "Amy Adams, Glenn Close, Haley Bennett"
-        }
-    ],
-    "fantasy": [
-        {
-            "id": 18,
-            "name": "The Hobbit: An Unexpected Journey",
-            "cast": "Martin Freeman, Ian McKellen, Ken Stott"
-        },
-        {
-            "id": 19,
-            "name": "The Lord of the Rings: The Fellowship of the Ring",
-            "cast": "Elijah Wood, Ian McKellen, Richard Harris, Viggo Mortensen"
-        },
-        {
-            "id": 20,
-            "name": "Damsel",
-            "cast": "Millie Bobby Brown, Ray Winstone, Angela Bassett"
-        }
-    ],
-    "users": [
-        {
-            "id": "test@gmail.com",
-            "platform": "Netflix"
-        }
-    ],
-    "platforms": [
-        {
-            "id": "Netflix",
-            "rentals": ["Napoleon", "Stuber", "Borderlands"]
-        }
-    ],
-    "colors": [
-        {
-            "id": 1,
-            "label": "Red"
-        },
-        {
-            "id": 2,
-            "label": "Blue"
-        },
-        {
-            "id": 3,
-            "label": "Green"
-        },
-        {
-            "id": 4,
-            "label": "Orange"
-        },
-        {
-            "id": 5,
-            "label": "Yellow"
-        },
-        {
-            "id": 6,
-            "label": "Violet"
-        },
-        {
-            "id": 7,
-            "label": "White"
-        },
-        {
-            "id": 8,
-            "label": "Purple"
-        },
-        {
-            "id": 9,
-            "label": "Black"
-        },
-        {
-            "id": 10,
-            "label": "Pink"
-        }
-    ]
+  "adventure": [
+    {
+      "id": 1,
+      "name": "Twisters",
+      "cast": "Glen Powell, Daisy Edgar-Jones, Anthony Ramos"
+    },
+    {
+      "id": 2,
+      "name": "Borderlands",
+      "cast": "Cate Blanchett , Kevin Hart, Jack Black"
+    },
+    {
+      "id": 3,
+      "name": "Inside Out 2",
+      "cast": "Amy Poehler, Maya Hawke, Liza Lapira"
+    },
+    {
+      "id": 4,
+      "name": "Prometheus",
+      "cast": "Noomi Rapace, Michael Fassbender, Charlize Theron"
+    }
+  ],
+  "comedy": [
+    {
+      "id": 5,
+      "name": "Stuber",
+      "cast": "Kumail Nanjiani, Dave Bautista, Iko Uwais"
+    },
+    {
+      "id": 6,
+      "name": "Blockers",
+      "cast": "Leslie Mann, John Cena, Ike Barinholtz, Kathryn Newton"
+    },
+    {
+      "id": 7,
+      "name": "Jumanji",
+      "cast": "Robin Williams, Adam Hann-Byrd, Kirsten Dunst"
+    },
+    {
+      "id": "c11f",
+      "name": "Deadpool 2",
+      "cast": "Ryan Reynolds, Josh Brolin, Morena Baccarin"
+    }
+  ],
+  "horror": [
+    {
+      "id": 8,
+      "name": "The First Omen",
+      "cast": "Nell Tiger Free, Ralph Ineson, Charles Dance"
+    },
+    {
+      "id": 9,
+      "name": "The Strangers: Chapter 1",
+      "cast": "Madelaine Petsch, Froy Gutierrez, Rachel Shenton"
+    },
+    {
+      "id": 10,
+      "name": "The Conjuring",
+      "cast": "Vera Farmiga, Patrick Wilson, Lili Taylor"
+    },
+    {
+      "id": 11,
+      "name": "Prey",
+      "cast": "Amber Midthunder, Dane DiLiegro"
+    }
+  ],
+  "historical": [
+    {
+      "id": 12,
+      "name": "Napoleon",
+      "cast": "Joaquin Phoenix, Vanessa Kirby, Tahar Rahim"
+    },
+    {
+      "id": 13,
+      "name": "The Revenant",
+      "cast": "Leonardo DiCaprio, Tom Hardy, Domhnall Gleeson, Will Poulter"
+    },
+    {
+      "id": 14,
+      "name": "Apollo 13",
+      "cast": "Tom Hanks, Kevin Bacon, Bill Paxton"
+    }
+  ],
+  "drama": [
+    {
+      "id": 15,
+      "name": "Civil War",
+      "cast": "Kirsten Dunst, Wagner Moura, Sonoya Mizuno"
+    },
+    {
+      "id": 16,
+      "name": "Babylon",
+      "cast": "Brad Pitt, Margot Robbie, Tobey Maguire, Olivia Wilde"
+    },
+    {
+      "id": 17,
+      "name": "Hillbilly Elegy",
+      "cast": "Amy Adams, Glenn Close, Haley Bennett"
+    }
+  ],
+  "fantasy": [
+    {
+      "id": 18,
+      "name": "The Hobbit: An Unexpected Journey",
+      "cast": "Martin Freeman, Ian McKellen, Ken Stott"
+    },
+    {
+      "id": 19,
+      "name": "The Lord of the Rings: The Fellowship of the Ring",
+      "cast": "Elijah Wood, Ian McKellen, Richard Harris, Viggo Mortensen"
+    },
+    {
+      "id": 20,
+      "name": "Damsel",
+      "cast": "Millie Bobby Brown, Ray Winstone, Angela Bassett"
+    }
+  ],
+  "users": [
+    {
+      "id": "test@gmail.com",
+      "platform": "Netflix"
+    }
+  ],
+  "platforms": [
+    {
+      "id": "Netflix",
+      "rentals": [
+        "Napoleon",
+        "Stuber",
+        "Borderlands"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "Red"
+    },
+    {
+      "id": 2,
+      "label": "Blue"
+    },
+    {
+      "id": 3,
+      "label": "Green"
+    },
+    {
+      "id": 4,
+      "label": "Orange"
+    },
+    {
+      "id": 5,
+      "label": "Yellow"
+    },
+    {
+      "id": 6,
+      "label": "Violet"
+    },
+    {
+      "id": 7,
+      "label": "White"
+    },
+    {
+      "id": 8,
+      "label": "Purple"
+    },
+    {
+      "id": 9,
+      "label": "Black"
+    },
+    {
+      "id": 10,
+      "label": "Pink"
+    }
+  ]
 }
