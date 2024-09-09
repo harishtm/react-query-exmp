@@ -16,7 +16,10 @@ export const AddComedyMovie = () => {
             isLoading, data,
             isError, error, isFetching, refetch
         } = useQuery('comedy-movies',
-                    fetchComedyMovies
+                    fetchComedyMovies,
+                    {
+                        enabled: false
+                    }
                 )
 
     const { mutate: addMovie } = useAddMovie()

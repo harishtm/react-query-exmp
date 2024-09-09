@@ -30,8 +30,21 @@ export const useMoviesData = (props) => {
 export const useAddMovie = () => {
     const queryClient = useQueryClient()
     return useMutation(addMovie, {
-        onSuccess: async () => {
-            await queryClient.invalidateQueries('comedy-movies')
+        /*
+        // Query Invalidation
+            onSuccess: async () => {
+                await queryClient.invalidateQueries('comedy-movies')
+            }
+        */
+       // Handling Mutation response
+       // Avoiding extra GET request(can help avoid additonal network call)
+        onSuccess: (data) => {
+            queryClient.setQueriesData('comedy-movies', (oldQueryData) => {
+                return {
+                    ...oldQueryData,
+                    data: [...oldQueryData.data, data.data]
+                }
+            })
         }
     })
 }
