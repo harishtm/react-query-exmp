@@ -1,5 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import axios from "axios";
+import randomBytes from "randombytes";
 
 const fetchMovies = ({queryKey}) => {
     /*
@@ -38,6 +39,7 @@ export const useAddMovie = () => {
         */
        // Handling Mutation response
        // Avoiding extra GET request(can help avoid additonal network call)
+       /*
         onSuccess: (data) => {
             queryClient.setQueriesData('comedy-movies', (oldQueryData) => {
                 return {
@@ -46,5 +48,29 @@ export const useAddMovie = () => {
                 }
             })
         }
+        */
+       onMutate: async (newMovie) => {
+            await queryClient.cancelQueries('comedy-movies')
+            const previousMovieData = queryClient.getQueryData('comedy-movies')
+            queryClient.setQueriesData('comedy-movies', (oldQueryData) => {
+                return {
+                    ...oldQueryData,
+                    data: [
+                        ...oldQueryData.data,
+                        {id: randomBytes(2).toString('hex'), ...newMovie.postParam}
+                    ]
+                }
+            })
+            return {
+                previousMovieData
+            }
+       },
+       onError: (_error, _hero, context) => {
+        console.log(_error, _hero, context)
+            queryClient.setQueriesData('comedy-movies', context.previousMovieData)
+       },
+       onSettled: () => {
+            queryClient.invalidateQueries('comedy-movies')
+       }
     })
 }
