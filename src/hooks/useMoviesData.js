@@ -1,6 +1,7 @@
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import axios from "axios";
 import randomBytes from "randombytes";
+import { request } from "../utils/axios-utils";
 
 const fetchMovies = ({queryKey}) => {
     /*
@@ -9,11 +10,13 @@ const fetchMovies = ({queryKey}) => {
         (and some more information if you are using an infinite query)
     */
     const [, url] = queryKey;
-    return axios.get(url)
+    // return axios.get(url)
+    return request({url: url})
 }
 
 const addMovie = ({url, postParam}) => {
-    return axios.post(url, postParam)
+    // return axios.post(url, postParam)
+    return request({url: url, method: 'post', data: postParam})
 }
 
 export const useMoviesData = (props) => {
@@ -66,7 +69,7 @@ export const useAddMovie = () => {
             }
        },
        onError: (_error, _hero, context) => {
-        console.log(_error, _hero, context)
+            console.log(_error, _hero, context)
             queryClient.setQueriesData('comedy-movies', context.previousMovieData)
        },
        onSettled: () => {
